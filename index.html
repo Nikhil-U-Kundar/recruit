@@ -1527,6 +1527,11 @@
           <img src="assets/digital-india-logo.png" alt="MeitY Startup Hub - Delivering innovation!"
             class="h-16 md:h-20 w-auto object-contain max-w-[200px] md:max-w-[240px]" />
         </a>
+        <a href="#" class="flex items-center justify-center" title="Ministry of Electronics and Information Technology">
+          <img src="assets/Ministry_of_Electronics_and_Information_Technology.svg"
+            alt="Ministry of Electronics and Information Technology"
+            class="h-16 md:h-20 w-auto object-contain max-w-[200px] md:max-w-[240px]" />
+        </a>
       </div>
     </div>
   </section>
@@ -1539,6 +1544,20 @@
       <p>&copy; 2025 Recruit by Mantrika AI. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var redirectUrl = 'https://recruit.inpulse.education/signin';
+      var clickableElements = document.querySelectorAll('button, a[href="#"]');
+
+      clickableElements.forEach(function (el) {
+        el.addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.href = redirectUrl;
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
