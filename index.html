@@ -96,7 +96,7 @@
           href="#dashboard">Institutions</a>
       </div>
       <a class="bg-primary hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all shadow-md shadow-primary/20"
-        href="#">Get Started</a>
+        href="https://recruit.inpulse.education/signin" target="_blank" rel="noopener">Get Started</a>
     </div>
   </nav>
 
@@ -137,11 +137,11 @@
             </div>
           </div>
         </div>
-        <button
-          class="bg-slate-900 dark:bg-white dark:text-slate-900 hover:bg-slate-800 text-white px-7 py-3 rounded-lg font-semibold transition-all flex items-center gap-2 shadow-lg">
+        <a href="https://recruit.inpulse.education/signin" target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 bg-slate-900 dark:bg-white dark:text-slate-900 hover:bg-slate-800 text-white px-7 py-3 rounded-lg font-semibold transition-all shadow-lg">
           Build Your Profile
           <span class="material-icons-round text-sm">arrow_forward</span>
-        </button>
+        </a>
       </div>
       <!-- Right: Floating Cards -->
       <div class="relative min-h-[500px] hidden lg:block">
@@ -384,11 +384,11 @@
         </div>
       </div>
       <div class="text-center mt-10">
-        <button
-          class="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-primary/20 flex items-center gap-2 mx-auto">
+        <a href="https://recruit.inpulse.education/signin" target="_blank" rel="noopener"
+          class="inline-flex items-center gap-2 bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-primary/20 mx-auto">
           Start Hiring Now
           <span class="material-icons-round text-sm">arrow_forward</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -1544,20 +1544,6 @@
       <p>&copy; 2025 Recruit by Mantrika AI. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var redirectUrl = 'https://recruit.inpulse.education/signin';
-      var clickableElements = document.querySelectorAll('button, a[href="#"]');
-
-      clickableElements.forEach(function (el) {
-        el.addEventListener('click', function (event) {
-          event.preventDefault();
-          window.location.href = redirectUrl;
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
